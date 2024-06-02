@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from spotify import get_tracks
+
+from src.spotify import get_tracks
 
 app = FastAPI()
 

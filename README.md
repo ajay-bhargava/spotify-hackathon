@@ -1,4 +1,12 @@
-# Installation
+# Repo Installation
+
+To install this repo, first clone it, then run:
+
+```bash
+uv pip install -r requirements.txt
+```
+
+# Setup
 
 To run a copy of this server first install `ngrok`. 
 
