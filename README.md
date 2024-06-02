@@ -17,7 +17,7 @@ brew install --cask ngrok
 then spin up the `FastAPI` server
 
 ```bash
-fastapi dev src/api.py
+fastapi dev api.py
 ```
 
 then run `ngrok` to expose the server to the internet
