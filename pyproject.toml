@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lensutils"
+version = "0.0.1"
+requires-python = ">=3.10"
+authors = [
+  {name = "Ajay Bhargava", email = "bhargava.ajay@gmail.com"},
+]
+description = "Hackathon."
+readme = "README.md"
+
+[tool.pytest.ini_options]
+addopts = ["-v"]
+filterwarnings = ["error", "ignore::DeprecationWarning"]
+testpaths = [
+    "__tests__"
+]
+
+[tool.ruff]
+select = ["F", "E", "W", "C"]
+line-length = 100
+extend-include = ["*.ipynb"]
