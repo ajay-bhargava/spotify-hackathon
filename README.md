@@ -1,3 +1,7 @@
+# `Mood` Agentic Mood Analysis
+
+![](./docs/mood.png)
+
 # Repo Installation
 
 To install this repo, first clone it, then run:
