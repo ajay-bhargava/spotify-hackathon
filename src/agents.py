@@ -25,6 +25,7 @@ app = typer.Typer()
 
 def get_spotify_data() -> dict:
     """retrieve the user's spotify data from an API endpoint."""
+    # Replace this with your ngrok URL
     url = "https://7281-108-41-92-245.ngrok-free.app/tracks/"
     payload = {
         "client_id": SPOTIFY_CLIENT_ID,
@@ -151,6 +152,7 @@ def compare_and_contrast():
     else:
         print("\n\n[red]Contrastive agent feels the two sentiments are different.[/red]")
 
+    # This wasn't very reliable.
     # cosine = counter_cosine_similarity(Counter(list_of_user_mood), Counter(spotify_mood["words"]))
     # print(f"\n\n[red]Cosine Similarity:[/red] {cosine:.2f}")
     # if cosine > 0.5:
