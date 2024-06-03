@@ -26,7 +26,21 @@ then run `ngrok` to expose the server to the internet
 ngrok http 8000
 ```
 
-# Testing
+# Usage
 
-You can test the server on a Google CoLab notebook [here](https://colab.research.google.com/drive/1g35zeVQcKyj0nGk_GUFplw93yPakdezp?authuser=0#scrollTo=F8NIAwtKgmJ1). 
+Once you've got the server running, you can call:
 
+```bash
+python3 src/agents.py
+```
+
+This will prompt you with a question. The agentic flow is as follows: 
+
+```mermaid
+graph LR
+    A[Conversation] --> B[Conversation Agent]
+    C[Spotify API] --> D[Spotify Mood Agent]
+    B --> E[Evaluator Agent]
+    D --> E
+    E --> F[Response]
+```
