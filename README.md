@@ -24,7 +24,7 @@ then spin up the `FastAPI` server
 fastapi dev api.py
 ```
 
-then run `ngrok` to expose the server to the internet
+(optional) then run `ngrok` to expose the server to the internet 
 
 ```bash
 ngrok http 8000
